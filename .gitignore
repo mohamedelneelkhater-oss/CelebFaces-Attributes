@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Jupyter / Gradio
+.ipynb_checkpoints/
+.gradio/
+flagged/
+
+# Secrets
+.env
+
+# best_overall.pth is only a copy of the winning model; the app finds the winner itself.
+models/best_overall.pth
+
+# Training samples are large and re-creatable on Kaggle.
+samples/
