@@ -88,6 +88,7 @@ The official FID needs a pretrained Inception network (extra download, extra GPU
 3. Compute the Frechet distance between the two Gaussians with NumPy.
 
 Lower is better. **This is not the official FID**, so compare only numbers produced by this same notebook.
+
 It is computed every 2 epochs; whenever it improves, the Generator checkpoint is saved. After both models finish,
 the one with the lower best metric becomes `best_overall`.
 
@@ -102,3 +103,7 @@ the one with the lower best metric becomes `best_overall`.
 - The metric is a coarse proxy; a human look at the sample grids is still important.
 - GANs can suffer from mode collapse or unstable training; the saved best checkpoint and the loss curves help detect this.
 - Ideas: Generator EMA, spectral normalization, higher resolution (128x128), official FID or KID, truncation of the noise at inference.
+
+https://github.com/user-attachments/assets/c9c764d0-df21-42a0-b291-e398d20287c6
+
+
